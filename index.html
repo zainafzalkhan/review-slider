@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>What Customer Say</h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img  src="./images/user1.jfif" alt="">
+                        <div>
+                            <h3>Roomie Shenoy</h3>
+                            <p>Web Developer</p>
+                        </div>
+                       
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et deserunt, quidem deleniti voluptates quam necessitatibus obcaecati delectus fugiat sequi.</p>
+                
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img  src="./images/user2.jfif" alt="">
+                        <div>
+                            <h3>Dekson ruby</h3>
+                            <p>Shopify Developer</p>
+                        </div>
+                       
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et deserunt, quidem deleniti voluptates quam necessitatibus obcaecati delectus fugiat sequi.</p>
+                
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img  src="./images/user3.jfif" alt="">
+                        <div>
+                            <h3>Azlan dubaika</h3>
+                            <p>Networking</p>
+                        </div>
+                       
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et deserunt, quidem deleniti voluptates quam necessitatibus obcaecati delectus fugiat sequi.</p>
+                
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img  src="./images/user4.jfif" alt="">
+                        <div>
+                            <h3>Shinzel Sh</h3>
+                            <p>Design adv</p>
+                        </div>
+                       
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et deserunt, quidem deleniti voluptates quam necessitatibus obcaecati delectus fugiat sequi.</p>
+                
+                </div>
+            </div>
+            <div class="sidebar">
+                <img src="./images/up-arrow.png" alt="" id="upArrow">
+                <img src="./images/down.png" alt="" id="downArrow">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slide=document.querySelector('#slide');
+        let up=document.querySelector('#upArrow');
+        let down=document.querySelector('#downArrow');
+        let xAxis=0;
+        up.addEventListener('click',()=>{
+            if(xAxis>'-900'){
+                xAxis=xAxis-300;
+            slide.style.top=xAxis+"px"
+            }
+        })
+        down.addEventListener('click',()=>{
+            if(xAxis<0){
+                xAxis=xAxis+300;
+            slide.style.top=xAxis+"px"
+            }
+        })
+    </script>
+</body>
+</html>
